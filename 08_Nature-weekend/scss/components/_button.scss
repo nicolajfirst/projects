@@ -1,0 +1,82 @@
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.4rem 2.2rem;
+  transition: transform .2s;
+  font-size: 1.6rem;
+  border: none;
+}
+button {
+  border-radius: 100px;
+  background-color: #4D9B45;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 .5rem 1rem rgba(#000, 0.2);
+}
+
+.btn--white {
+  
+  background-color: #fff;
+  color: #777777;
+  animation-name: moveUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+button.btn--white {
+  margin-top: 2rem;
+  background-image: linear-gradient(to right, #EAFBE9, #70B16A);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  outline: none;
+}
+
+.btn--green {
+  background-color: #51E424;
+  color: #fff;
+}
+
+.btn--text:link,
+.btn--text:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: forestgreen;
+  background-color: transparent;
+  border-bottom: 2px solid forestgreen;
+  padding: .3rem .6rem;
+  transition: all .2s;
+
+  &:hover {
+    background-color: forestgreen;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 .2rem .7rem rgba(#000, .2);
+  }
+}
+
+.btn--text-story:link,
+.btn--text-story:visited {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+
+  &:hover {
+    border-bottom: 2px solid transparent;
+  }
+}

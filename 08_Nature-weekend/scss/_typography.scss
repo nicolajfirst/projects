@@ -1,0 +1,94 @@
+.u-text-center {
+  text-align: center;
+}
+
+.u-margin-bottom-middle {
+  margin-bottom: 6rem;
+}
+
+.u-margin-top-middle {
+  margin-top: 6rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: .4rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+
+    -webkit-animation: moveInRight 1s ease-in;
+    animation: moveInRight 1s ease-in;
+  }
+}
+
+
+.heading-secondary {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, green, lightgreen);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .18rem;
+  transition: background-clip 2s;
+
+  &:hover {
+    background-image: linear-gradient(to right, #A1C134, green);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: .5rem 1rem 2rem rgba(#000, .2);
+
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+  }
+}
+
+.heading-tertiary {
+  color: inherit;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: .12rem;
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  font-family: "Quattrocento Sans", sans-serif;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

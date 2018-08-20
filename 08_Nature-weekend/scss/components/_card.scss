@@ -1,0 +1,141 @@
+//FUNCTIONALITY
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  -webkit-perspective: 150rem;
+  position: relative;
+  height: 45rem;
+  border-radius: .5rem;
+  backface-visibility: hidden;
+
+  &__side {
+    border-radius: .5rem;
+    height: 45rem;
+    transition: all .7s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    //-moz-backface-visibility: hidden;
+    //-webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+
+    &--front {
+      background-color: #fff;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(to right bottom, orangered, orange);
+      }
+
+      &-2 {
+        background-image: linear-gradient(to right bottom, #51A000, #80FC9A);
+      }
+
+      &-3 {
+        background-image: linear-gradient(to right bottom, #517AFF, #92BBFF);
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  // FRONT SIDE STYLING
+  &__picture {
+      background-size: cover;
+      height: 23rem;
+      background-blend-mode: hard-light;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+
+
+    &--1 {
+
+    }
+
+    &--2 {
+
+    }
+
+    &--3 {
+
+    }
+  }
+
+  &__heading {
+    width: 17rem;
+    display: inline-block;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 3px;
+    background-image: linear-gradient(to right bottom, rgba(#E4E4E4, 0.8), rgba(#f0f0f0, 0.8));
+    padding: .4rem 1rem;
+    position: absolute;
+    top: 32%;
+    left: 2%;
+  }
+
+  &__details {
+
+
+    ul {
+        text-align: center;
+        list-style: none;
+        width: 70%;
+        margin: 0 auto;
+
+      li {
+        color: #0C0C35;
+        font-size: 1.5rem;
+        padding: .8rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid #E4E4E4;
+        }
+      }
+    }
+
+  }
+
+  // BACK SIDE STYLING
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+}
+
+
+
+
+
+
