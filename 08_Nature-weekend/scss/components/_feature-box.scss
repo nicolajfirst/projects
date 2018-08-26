@@ -29,3 +29,14 @@
   }
 }
 
+.col-1-of-4.feature-box__wrap {
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 0 8rem;
+  }
+}

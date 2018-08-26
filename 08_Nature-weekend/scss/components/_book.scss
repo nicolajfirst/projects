@@ -1,8 +1,14 @@
 .book {
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(#000, .15);
 
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include respond(tab-port) {
+      padding: 2rem;
+    }
 
      .heading-secondary {
       background-image: linear-gradient(to right, rgba(#fff, .9),rgba(#FFFF00, .4));

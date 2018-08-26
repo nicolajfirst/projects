@@ -1,5 +1,17 @@
 //FUNCTIONALITY
 
+.col-1-of-3.card__wrap {
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 0 8rem;
+  }
+}
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -85,6 +97,10 @@
     position: absolute;
     top: 32%;
     left: 2%;
+
+    @include respond(tab-port) {
+      font-size: 220%;
+    }
   }
 
   &__details {
@@ -103,6 +119,12 @@
 
         &:not(:last-child) {
           border-bottom: 1px solid #E4E4E4;
+        }
+
+        @include respond(tab-port) {
+          font-size: 180%;
+          padding: .6rem 0;
+
         }
       }
     }
