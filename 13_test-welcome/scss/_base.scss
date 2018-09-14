@@ -1,0 +1,38 @@
+/*-----BASE-----*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cleafrix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.main-content {
+  max-width: 100vw;
+}
+
+.container {
+  width: 85vw;
+  margin: 0 auto;
+
+  @media screen and(max-width: 780px) {
+    width: 100%;
+  }
+}
+

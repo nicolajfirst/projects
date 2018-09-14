@@ -1,0 +1,121 @@
+/*------ Typography ------*/
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+.heading-primary {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 7.2rem;
+  letter-spacing: .4rem;
+  color: #fff;
+  font-weight: bold;
+  margin: 3rem 0;
+
+  @media screen and(max-width: 1024px) {
+    font-size: 5.5rem;
+  }
+
+  @media (max-width: 780px) {
+    font-size: 4rem;
+  }
+
+  &--hide {
+    @extend .heading-primary;
+    display: block;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: $white;
+  margin-bottom: 2.5rem;
+  text-transform: capitalize;
+
+  @media (max-width: 900px) {
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+.heading-tertiary {
+  color: $white;
+  font-family: "Source Sans Pro", sans-serif;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 4%;
+
+  &::after {
+    content: "";
+    display: block;
+    margin: 12% 0 13% 0;
+    width: 35%;
+    height: .1em;
+    background-color: $white;
+  }
+
+  @media (max-width: 600px) {
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  &--size {
+    margin-right: 3.5em;
+
+    @media (max-width: 600px) {
+      font-size: 1.6em;
+    }
+  }
+
+  &--color {
+
+    @media (max-width: 600px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__ph--hide {
+    display: none;
+
+    @media (min-width: 601px) and (max-width: 900px) {
+      display: block;
+      margin-bottom: 1.6rem;
+    }
+  }
+}
+
+.heading-quaternary {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 2.4rem;
+  letter-spacing: .1rem;
+}
+
+.paragraph {
+  margin: 4rem auto 6.5rem auto;
+  font: 400 1.4rem 'Open Sans', sans-serif;
+  width: 76%;
+  color: #fff;
+
+  @media screen and(max-width: 1024px) {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin: 3rem auto 5rem auto;
+  }
+}

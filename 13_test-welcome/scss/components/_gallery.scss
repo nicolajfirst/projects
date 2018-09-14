@@ -1,0 +1,112 @@
+.row {
+  width: 100%;
+  height: 34.5rem;
+
+  @include clearfix;
+
+  @media screen and(max-width: 600px) {
+    height: 35rem;
+  }
+}
+
+.col-1-of-4 {
+  float: left;
+  width: 25%;
+  height: 100%;
+
+  @media screen and(max-width: 780px) {
+    width: 50%;
+  }
+
+  @media screen and(max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.gallery {
+
+  &__photo {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+
+    &:hover {
+      opacity: 0.7;
+      -webkit-transform: scale(1.03);
+      -moz-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      -o-transform: scale(1.03);
+      transform: scale(1.03);
+    }
+  }
+
+  &__desc {
+    background-color: $red;
+    padding: 10% 8%;
+    height: 100%;
+    position: relative;
+
+    &:after {
+      content: "";
+      border: 20px solid transparent;
+      border-right: 20px solid $red;
+      position: absolute;
+      top: 45%;
+      left: -40px;
+    }
+
+    &--right-arrow:after {
+      content: "";
+      border: 20px solid transparent;
+      border-left: 20px solid $red;
+      position: absolute;
+      top: 45%;
+      left: 100%;
+      z-index: 1;
+    }
+  }
+
+  &__span {
+    display: block;
+    margin-bottom: 6.2%;
+    font-size: 1.4rem;
+    color: $white;
+  }
+
+  &__ph {
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 8.5%
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 1%;
+    text-decoration: none;
+    font: 600 1.6em "Open Sans", sans-serif;
+    font-style: italic;
+    color: $white;
+    transition: all .2s;
+
+    &:hover {
+      box-shadow: 0 1rem 3rem rgba(#000, .3);
+    }
+  }
+}

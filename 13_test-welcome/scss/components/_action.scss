@@ -1,0 +1,22 @@
+.section-action {
+  padding: 15rem 0;
+  text-align: center;
+}
+
+.action {
+
+  &__span {
+    font-weight: 700;
+  }
+
+  &__text-box {
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+  }
+  &__ph {
+    font-size: 1.8rem;
+    color: $white;
+    margin-bottom: 6.5rem;
+  }
+}
