@@ -1,0 +1,102 @@
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  border-radius: 6px;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 1.4rem 1.5rem;
+  transition: transform .2s;
+  font-size: 1.7rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 .5rem 1rem rgba(#000, 0.2);
+}
+
+.btn--orange {
+  color: $white;
+  background-image: linear-gradient(107deg, #ff8e64, #ffe641);
+  margin-right: 2rem;
+}
+
+.btn--buy {
+  @extend .btn--orange;
+  letter-spacing: .1rem;
+  text-transform: none;
+  width: 17rem;
+  text-align: center;
+}
+
+.btn--white {
+  background-color: #fff;
+  color: $hover-link-dark;
+  animation-name: moveUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  &-1 {
+    letter-spacing: .1rem;
+    width: 17rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+
+button.btn--white {
+  margin-top: 2rem;
+  background-image: linear-gradient(to right, #EAFBE9, #70B16A);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  outline: none;
+}
+
+.btn--green {
+  background-color: #51E424;
+  color: #fff;
+}
+
+.btn--text:link,
+.btn--text:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: forestgreen;
+  background-color: transparent;
+  border-bottom: 2px solid forestgreen;
+  padding: .3rem .6rem;
+  transition: all .2s;
+
+  &:hover {
+    background-color: forestgreen;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 .2rem .7rem rgba(#000, .2);
+  }
+}
+
+.btn--text-story:link,
+.btn--text-story:visited {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+
+  &:hover {
+    border-bottom: 2px solid transparent;
+  }
+}

@@ -1,0 +1,59 @@
+/*------ Typography ------*/
+
+.heading-primary {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  color: $white;
+  margin-bottom: 3.7rem;
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  @media screen and(max-width: 1024px) {
+    font-size: 5.5rem;
+  }
+
+  @media (max-width: 780px) {
+    font-size: 4rem;
+  }
+
+  &--hide {
+    @extend .heading-primary;
+    display: block;
+  }
+}
+
+
+// ABOUT
+.heading-quaternary {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #282b31;
+
+  &--bold {
+    font-weight: 800;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: .8rem;
+  }
+}
+
+.about-ph {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.79;
+  color: #676c75;
+}
+
+.download-ph {
+  font-size: 1.6rem;
+  line-height: 1.88;
+  color: rgba(255, 255, 255, 0.8);
+}

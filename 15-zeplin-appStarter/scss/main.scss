@@ -1,0 +1,29 @@
+@import "settings/base";
+@import "settings/variable";
+@import "settings/mixins";
+
+@import "components/header";
+@import "components/typography";
+@import "components/button";
+@import "components/about";
+@import "components/download";
+@import "components/chess";
+
+
+
+
+.header {
+  background-image: linear-gradient( to right bottom,
+          rgba(122,87,234, .2),
+          rgba(49,185,246, .2)),
+  url("../img/header-bg.jpg");
+  background-size: cover;
+}
+
+.section-download {
+  background-image: linear-gradient( to right bottom,
+          rgba(122,87,234, .2),
+          rgba(49,185,246, .2)),
+  url("../img/download-bg.png");
+  background-size: cover;
+}
