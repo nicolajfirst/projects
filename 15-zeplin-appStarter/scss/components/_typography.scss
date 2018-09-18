@@ -13,17 +13,18 @@
     font-weight: bold;
   }
 
+  &--black {
+    color: #282B31;
+    margin-bottom: 1.7rem;
+    letter-spacing: normal;
+  }
+
   @media screen and(max-width: 1024px) {
     font-size: 5.5rem;
   }
 
   @media (max-width: 780px) {
     font-size: 4rem;
-  }
-
-  &--hide {
-    @extend .heading-primary;
-    display: block;
   }
 }
 
@@ -56,4 +57,22 @@
   font-size: 1.6rem;
   line-height: 1.88;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.chess-ph {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  color: #676c75;
+}
+
+.chess-ph--white {
+  color: #fff;
+  width: 100%;
+}
+
+.chess-ph--white span {
+  display: block;
+  font-weight: bold;
 }

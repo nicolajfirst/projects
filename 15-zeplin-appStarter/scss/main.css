@@ -1,61 +1,349 @@
-/*
-Error: File to import not found or unreadable: components/c.
-        on line 10 of main.scss
+/*-----BASE-----*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-5: @import "components/header";
-6: @import "components/typography";
-7: @import "components/button";
-8: @import "components/about";
-9: @import "components/download";
-10: @import "components/c";
-11: 
-12: 
-13: 
-14: 
-15: .header {
+html {
+  font-size: 62.5%; }
 
-Backtrace:
-main.scss:10
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin.rb:82:in `update_stylesheets'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/bin/scss:13:in `<top (required)>'
-C:/Ruby24/bin/scss:23:in `load'
-C:/Ruby24/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: components/c.\A         on line 10 of main.scss\A \A 5: @import \"components/header\";\A 6: @import \"components/typography\";\A 7: @import \"components/button\";\A 8: @import \"components/about\";\A 9: @import \"components/download\";\A 10: @import \"components/c\";\A 11: \A 12: \A 13: \A 14: \A 15: .header {"; }
+body {
+  font-family: 'Nunito Sans', sans-serif; }
+
+.main-content {
+  overflow: hidden; }
+
+.container {
+  width: 114rem;
+  margin: 0 auto; }
+
+/*-*-*-----COLOR-----*-*-*/
+.header {
+  padding-bottom: 1rem; }
+  .header__top-box {
+    width: 100%; }
+    .header__top-box::after {
+      content: "";
+      display: block;
+      clear: both; }
+  .header__left {
+    float: left;
+    width: 10.35%;
+    margin-top: 3rem; }
+  .header__right {
+    float: right;
+    width: 44.39%;
+    margin-top: 3.5rem; }
+  .header__logo {
+    width: 118px;
+    height: 27px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff; }
+  .header__nav {
+    width: 100%; }
+  .header__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+  .header__item {
+    width: 13.2rem;
+    height: 4rem; }
+  .header__link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 4rem;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: #fff;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s; }
+    .header__link:hover {
+      color: #282b31;
+      border-radius: 6px;
+      background-color: #ffffff;
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-align: center;
+      box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08); }
+  .header--burger {
+    cursor: pointer;
+    background-color: rgba(31, 31, 31, 0.4);
+    width: 1.6rem;
+    height: 1.2rem; }
+    .header--burger:hover {
+      background-color: red; }
+    @media screen and (max-width: 780px) {
+      .header--burger {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0; } }
+  .header__text-box {
+    margin: 17.3rem 0; }
+  .header__text {
+    display: inline-block;
+    width: 55.5rem;
+    margin-right: 9.5rem; }
+  .header__icon {
+    display: inline-block;
+    margin-left: -1rem;
+    margin-bottom: 3.5rem; }
+  .header-tablet {
+    display: inline-block;
+    position: absolute;
+    top: 14rem;
+    right: 7.6rem; }
+
+/*------ Typography ------*/
+.heading-primary {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 3.7rem; }
+  .heading-primary--bold {
+    font-weight: bold; }
+  .heading-primary--black {
+    color: #282B31;
+    margin-bottom: 1.7rem;
+    letter-spacing: normal; }
+  @media screen and (max-width: 1024px) {
+    .heading-primary {
+      font-size: 5.5rem; } }
+  @media (max-width: 780px) {
+    .heading-primary {
+      font-size: 4rem; } }
+
+.heading-quaternary {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #282b31; }
+  .heading-quaternary--bold {
+    font-weight: 800; }
+  .heading-quaternary:not(:last-child) {
+    margin-bottom: .8rem; }
+
+.about-ph {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.79;
+  color: #676c75; }
+
+.download-ph {
+  font-size: 1.6rem;
+  line-height: 1.88;
+  color: rgba(255, 255, 255, 0.8); }
+
+.chess-ph {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  color: #676c75; }
+
+.chess-ph--white {
+  color: #fff;
+  width: 100%; }
+
+.chess-ph--white span {
+  display: block;
+  font-weight: bold; }
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  border-radius: 6px;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 1.4rem 1.5rem;
+  transition: transform .2s;
+  font-size: 1.7rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08); }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--orange, .btn--buy {
+  color: #fff;
+  background-image: linear-gradient(107deg, #ff8e64, #ffe641);
+  margin-right: 2rem; }
+
+.btn--buy {
+  letter-spacing: .1rem;
+  text-transform: none;
+  width: 17rem;
+  text-align: center; }
+
+.btn--white {
+  background-color: #fff;
+  color: #282b31;
+  animation-name: moveUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+  .btn--white-1 {
+    letter-spacing: .1rem;
+    width: 17rem;
+    text-align: center;
+    text-transform: capitalize; }
+
+button.btn--white {
+  margin-top: 2rem;
+  background-image: linear-gradient(to right, #EAFBE9, #70B16A);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  outline: none; }
+
+.btn--green {
+  background-color: #51E424;
+  color: #fff; }
+
+.btn--text:link,
+.btn--text:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: forestgreen;
+  background-color: transparent;
+  border-bottom: 2px solid forestgreen;
+  padding: .3rem .6rem;
+  transition: all .2s; }
+  .btn--text:link:hover,
+  .btn--text:visited:hover {
+    background-color: forestgreen;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); }
+  .btn--text:link:active,
+  .btn--text:visited:active {
+    box-shadow: 0 0.2rem 0.7rem rgba(0, 0, 0, 0.2); }
+
+.btn--text-story:link,
+.btn--text-story:visited {
+  color: #fff;
+  border-bottom: 2px solid #fff; }
+  .btn--text-story:link:hover,
+  .btn--text-story:visited:hover {
+    border-bottom: 2px solid transparent; }
+
+.section-about {
+  padding: 24.9rem 0 14.1rem 0;
+  background-color: #F8F9FA; }
+
+.about::after {
+  content: "";
+  display: block;
+  clear: both; }
+.about__left, .about__right {
+  float: left;
+  width: 41.22%; }
+.about__left {
+  margin-right: 17.56%; }
+.about__right {
+  margin-top: 11.5rem; }
+.about-tablet {
+  width: 100%;
+  height: auto; }
+.about-box {
+  width: 100%;
+  height: 16rem;
+  padding: 3rem;
+  display: flex;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
+  .about-box:not(:last-child) {
+    margin-bottom: 2.6rem; }
+  .about-box:hover {
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px 0 rgba(32, 33, 39, 0.08); }
+.about__icon {
+  text-align: center;
+  margin-right: 1.8rem; }
+
+.section-download {
+  padding: 7.5rem 0; }
+
+.download::after {
+  content: "";
+  display: block;
+  clear: both; }
+.download__left, .download__right {
+  float: left;
+  width: 50%; }
+.download__right {
+  text-align: right;
+  height: 13em; }
+.download__btn-box {
+  margin-top: 10%; }
+
+.section-chess {
+  background-color: #F8F9FA;
+  padding: 12rem 0; }
+
+.chess {
+  width: 100%;
+  height: 118rem;
+  box-shadow: 0 6px 12px 0 rgba(32, 33, 39, 0.08); }
+  .chess__block {
+    float: left;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    background-image: linear-gradient(to right bottom, rgba(122, 87, 234, 0.8), rgba(49, 185, 246, 0.8));
+    overflow: hidden; }
+  .chess__block--grey {
+    background: #fff;
+    position: relative; }
+  .chess__text-box {
+    width: 37rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .chess__image-box {
+    padding: 9rem 9rem 0 9rem; }
+  .chess__img {
+    display: inline-block;
+    text-align: center;
+    width: 95%;
+    height: auto; }
+
+.header {
+  background-image: linear-gradient(to right bottom, rgba(122, 87, 234, 0.2), rgba(49, 185, 246, 0.2)), url("../img/header-bg.jpg");
+  background-size: cover; }
+
+.section-download {
+  background-image: linear-gradient(to right bottom, rgba(122, 87, 234, 0.2), rgba(49, 185, 246, 0.2)), url("../img/download-bg.png");
+  background-size: cover; }
+
+/*# sourceMappingURL=main.css.map */
