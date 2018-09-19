@@ -49,6 +49,8 @@
     &:hover {
       border-radius: 12px;
       background-color: #ffffff;
+      -webkit-box-shadow: 0 6px 12px 0 rgba(32, 33, 39, 0.08);
+      -moz-box-shadow: 0 6px 12px 0 rgba(32, 33, 39, 0.08);
       box-shadow: 0 6px 12px 0 rgba(32, 33, 39, 0.08);
     }
   }

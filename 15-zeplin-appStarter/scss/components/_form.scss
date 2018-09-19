@@ -1,0 +1,107 @@
+.section-form {
+  padding: 11.3rem 0;
+}
+
+.form {
+
+  &__text-box {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto 6rem auto;
+
+  }
+
+  &__select {
+    @include placeholderForm;
+    height: 5rem;
+  }
+
+}
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.2rem;
+  background-color: $white;
+  padding: 7rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px 0 rgba(40, 43, 49, 0.16);
+}
+
+.huge-bottom {
+  margin-bottom: 25rem;
+}
+
+.span-1-of-2 {
+  width: 49%;
+  margin: 0;
+  float: left;
+}
+
+.span-1-of-2:first-child {
+  margin-right: 2%;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 1.4rem;
+  border-radius: .3rem;
+  border: 1px solid transparent;
+  margin-bottom: 4%;
+  background-color: rgba(214,212,223, .5);
+}
+
+input[type=submit] {
+  display: block;
+  margin: 0 auto;
+  font: 700 1.7rem 'Nunito Sans', sans-serif;
+  background-color: rgba(159, 154, 207, .8);
+  color: $white;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+
+input[type=submit]:hover, .btn:hover {
+  box-shadow: 0 10px 30px rgba(255,255,255, .15);
+}
+
+input[type=submit]:active, .btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 10px 20px rgba(255,255,255, .3);
+}
+
+textarea {
+  height: 14rem;
+  outline: none;
+  -moz-appearance: none;
+}
+
+label {
+  line-height: 160%;
+  vertical-align: bottom;
+}
+
+*:focus {
+  outline:none;
+}
+
+input::-webkit-input-placeholder {
+  @include placeholderForm;
+}
+input:-moz-placeholder {
+  @include placeholderForm;
+}
+
+textarea::-webkit-input-placeholder {
+  @include placeholderForm;
+}
+
+textarea:-moz-placeholder {
+  @include placeholderForm;
+}
+

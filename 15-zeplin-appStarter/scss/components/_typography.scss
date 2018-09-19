@@ -76,3 +76,13 @@
   display: block;
   font-weight: bold;
 }
+
+.video-ph {
+  @extend .chess-ph;
+  color: rgba($white, .6);
+}
+
+.card-ph {
+  text-align: left;
+  margin-bottom: 2rem;
+}
