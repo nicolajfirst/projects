@@ -1,0 +1,93 @@
+.footer {
+  padding: 3rem 0 4.5rem 0;
+
+  &__wrap {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    @extend .header__logo;
+    color: $black;
+  }
+
+  &__desc {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__copy {
+    color: #999ea8;
+  }
+}
+
+//SOCIAL ICONS
+
+.social {
+  list-style: none;
+  height: 100%;
+  display: flex;
+
+  &__item {
+    width: 4rem;
+    height: 100%;
+    border: 1px solid #C1C4CA;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+
+    &--1 {
+      border-top-left-radius: .6rem;
+      border-bottom-left-radius: .6rem;
+
+      &:hover {
+        background-color: #00ACED;
+      }
+    }
+
+    &--2 {
+      border-bottom: transparent;
+      border-right: transparent;
+      border-left: transparent;
+
+      &:hover {
+        background-color: #3B579D;
+      }
+    }
+
+    &--3 {
+      border-top-right-radius: .6rem;
+      border-bottom-right-radius: .6rem;
+
+      &:hover {
+        background-color: #C63EB2;
+      }
+    }
+  }
+
+  &__link {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    color: #C1C4CA;
+    font-size: 1.6rem;
+  }
+
+  &__icon--heart {
+    color: #FF4876;
+    font-size: 1.2rem;
+
+  }
+}
