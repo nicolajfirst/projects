@@ -31,11 +31,14 @@ body {
   .header__left {
     float: left;
     width: 10.35%;
-    margin-top: 3rem; }
+    padding-top: 3rem;
+    margin-right: 45.26%;
+    height: 4rem;
+    line-height: 4rem; }
   .header__right {
-    float: right;
+    float: left;
     width: 44.39%;
-    margin-top: 3.5rem; }
+    padding-top: 3.5rem; }
   .header__logo, .footer__logo {
     width: 118px;
     height: 27px;
@@ -68,6 +71,8 @@ body {
     -ms-transition: all .2s;
     -o-transition: all .2s;
     transition: all .2s; }
+    .header__link--burger {
+      width: 3rem; }
     .header__link:hover {
       color: #282b31;
       border-radius: 6px;
@@ -84,12 +89,6 @@ body {
     height: 1.2rem; }
     .header--burger:hover {
       background-color: red; }
-    @media screen and (max-width: 780px) {
-      .header--burger {
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0; } }
   .header__text-box {
     margin: 17.3rem 0; }
   .header__text {
@@ -100,11 +99,12 @@ body {
     display: inline-block;
     margin-left: -1rem;
     margin-bottom: 3.5rem; }
-  .header-tablet {
-    display: inline-block;
-    position: absolute;
-    top: 14rem;
-    right: 7.6rem; }
+
+.tablet {
+  display: inline-block;
+  position: absolute;
+  top: 14rem;
+  right: 7.6rem; }
 
 /*------ Typography ------*/
 .heading-primary {
@@ -121,12 +121,10 @@ body {
     color: #282B31;
     margin-bottom: 1.7rem;
     letter-spacing: normal; }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1023px) {
     .heading-primary {
-      font-size: 5.5rem; } }
-  @media (max-width: 780px) {
-    .heading-primary {
-      font-size: 4rem; } }
+      font-size: 2.6rem;
+      margin-bottom: 2.5rem; } }
 
 .heading-quaternary {
   font-family: 'Nunito Sans', sans-serif;
@@ -149,6 +147,9 @@ body {
   font-size: 1.6rem;
   line-height: 1.88;
   color: rgba(255, 255, 255, 0.8); }
+  @media screen and (max-width: 1023px) {
+    .download-ph {
+      font-size: 1.5rem; } }
 
 .chess-ph, .video-ph, .card-form__label {
   font-family: 'Nunito Sans', sans-serif;
@@ -156,6 +157,9 @@ body {
   line-height: 1.88;
   text-align: center;
   color: #676c75; }
+  @media screen and (max-width: 1023px) {
+    .chess-ph, .video-ph, .card-form__label {
+      font-size: 1.5rem; } }
 
 .chess-ph--white {
   color: #fff;
@@ -189,6 +193,12 @@ body {
   border: none;
   cursor: pointer;
   box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08); }
+  @media screen and (max-width: 900px) {
+    .btn,
+    .btn:link,
+    .btn:visited {
+      font-size: 1.6rem;
+      padding: 1.2rem 1.3rem; } }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -216,6 +226,10 @@ body {
   text-transform: none;
   width: 17rem;
   text-align: center; }
+  @media screen and (max-width: 1023px) {
+    .btn--buy {
+      margin-right: 0;
+      margin-bottom: 5%; } }
 
 .btn--white {
   background-color: #fff;
@@ -670,6 +684,112 @@ textarea:-moz-placeholder {
     color: #FF4876;
     font-size: 1.2rem; }
 
+/* Big tablet to 1200px (width smaller than 1140px row)*/
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 0 2%; }
+    .header__left {
+      margin-right: 40%; }
+    .header__top-box {
+      width: 100%; }
+    .header__text-box {
+      margin: 7.3em 0; }
+    .header__icon {
+      width: 25%; }
+    .header__img {
+      width: 100%; }
+    .header__text {
+      width: 49%;
+      padding: 2% 3%; }
+    .header__icon {
+      width: 20%; }
+
+  .tablet {
+    width: 40%; }
+    .tablet__img {
+      width: 90%; } }
+/* Small tablet to big tablet: from 768px to 1023px*/
+@media screen and (max-width: 1023px) {
+  .container {
+    width: 90%; }
+
+  .header__left {
+    width: 25%;
+    padding-top: 0;
+    margin: 0; }
+  .header__right {
+    width: 75%;
+    padding-top: 0;
+    margin-top: 0; }
+  .header__top-box {
+    padding-top: 2rem; }
+  .header__text {
+    width: 50%;
+    padding: 10% 0; }
+  .header__icon {
+    width: 25%;
+    margin-bottom: 0; }
+
+  .section-about {
+    margin-top: -7rem;
+    padding: 16rem 0 8rem 0; }
+
+  .about__right {
+    margin-top: 0; }
+  .about-box {
+    padding: 0 2%; }
+  .about-tablet {
+    width: 100%; }
+
+  .tablet__img {
+    width: 100%; }
+
+  .section-download {
+    padding: 8% 0; }
+
+  .download__btn-box {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .chess {
+    height: 100rem; }
+    .chess__image-box {
+      height: 120%;
+      width: auto;
+      padding: 10% 0;
+      display: flex;
+      justify-content: center; }
+    .chess__img {
+      width: 80%; }
+    .chess__text-box {
+      width: 85%; }
+
+  .section-video {
+    padding: 8% 0; }
+
+  .section-card {
+    padding: 8% 0; }
+
+  .card__side {
+    padding: 5% 0;
+    height: 90%; }
+  .card__half {
+    padding: 1rem; }
+  .card__price-value {
+    font-size: 4.5rem; }
+  .card__details ul li {
+    font-size: 1.3rem; }
+
+  .section-form {
+    padding: 8% 0; }
+
+  .contact-form {
+    width: 90%;
+    padding: 5rem; } }
+/* Small phone to small tablet: from 481px to 767px*/
+/* Small phones: from 0 to 480px*/
 .header {
   background-image: linear-gradient(to right bottom, rgba(122, 87, 234, 0.2), rgba(49, 185, 246, 0.2)), url("../img/header-bg.jpg");
   background-size: cover; }

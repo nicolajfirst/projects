@@ -12,13 +12,16 @@
   &__left {
     float: left;
     width: 10.35%;
-    margin-top: 3rem;
+    padding-top: 3rem;
+    margin-right: 45.26%;
+    height: 4rem;
+    line-height: 4rem;
   }
 
   &__right {
-    float: right;
+    float: left;
     width: 44.39%;
-    margin-top: 3.5rem;
+    padding-top: 3.5rem;
   }
 
   &__logo {
@@ -62,6 +65,10 @@
     -o-transition: all .2s;
     transition: all .2s;
 
+    &--burger {
+      width: 3rem;
+    }
+
     &:hover {
       color: $hover-link-dark;
       border-radius: 6px;
@@ -84,13 +91,6 @@
       background-color: red;
 
     }
-
-    @media screen and(max-width: 780px) {
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
   }
 
   &__text-box {
@@ -108,14 +108,15 @@
     margin-left: -1rem;
     margin-bottom: 3.5rem;
   }
-  &-tablet {
-    display: inline-block;
-    position: absolute;
-    top: 14rem;
-    right: 7.6rem;
-  }
 }
 
-.tablet__img {
+.tablet {
+  display: inline-block;
+  position: absolute;
+  top: 14rem;
+  right: 7.6rem;
 
+  &__img {
+
+  }
 }
