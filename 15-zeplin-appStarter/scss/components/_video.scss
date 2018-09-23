@@ -9,6 +9,7 @@
   &__text-box {
     width: 100%;
     text-align: center;
+    margin-bottom: 5rem;
 
     & > .heading-primary {
       margin-bottom: 1.7rem;
@@ -23,7 +24,6 @@
     display: inline-block;
     width: 7rem;
     height: 7rem;
-    margin-top: 5.1rem;
     border-radius: 50%;
     background-color: $white;
     position: relative;
