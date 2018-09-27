@@ -1,0 +1,52 @@
+.section-video {
+  padding: 11.3rem 0;
+}
+
+.video {
+  width: 51.77%;
+  margin: 0 auto;
+
+  &__text-box {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+
+    & > .heading-primary {
+      margin-bottom: 1.7rem;
+    }
+  }
+
+  &__button-box {
+    text-align: center;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-color: $white;
+    position: relative;
+
+    &:hover {
+      @include boxShadowForm;
+      background-color: rgba($white, .8);
+    }
+
+    &::after {
+      content: "";
+      border: 1.2rem solid transparent;
+      border-left: 2rem solid orange;
+      position: absolute;
+      border-radius: 2px;
+      top: 50%;
+      left: 60%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+

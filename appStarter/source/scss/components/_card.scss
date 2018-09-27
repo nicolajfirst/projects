@@ -1,0 +1,189 @@
+.section-card {
+  padding: 12rem 0;
+}
+
+.card {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  &__left, &__right {
+    float: left;
+  }
+
+  &__left {
+    width: 32.46%;
+    margin-right: 11.4%;
+  }
+
+  &__right {
+    width: 56.14%;
+  }
+
+  &__text-box {
+    width: 100%;
+  }
+
+  &-form {
+
+  }
+
+  &-form__group {
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &-form__input {
+    width: 20.6rem;
+    height: 4rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin-right: 1.2rem;
+    padding-left: 1rem;
+
+    @include boxShadowForm;
+
+    &:hover {
+      @include HoverBoxShadowForm;
+    }
+  }
+
+  &-form__label {
+    @extend .chess-ph;
+    margin-right: 1.2rem;
+
+    &--block {
+      display: block;
+      text-align: left;
+    }
+  }
+
+  &-form__select {
+    display: inline-block;
+    width: 8.9rem;
+    height: 4rem;
+    color: #3E3E3E;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    padding-left: 1rem;
+
+    @include boxShadowForm;
+
+    &:hover {
+      @include HoverBoxShadowForm;
+    }
+  }
+
+  // CARD RIGHT
+
+  &__wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__side {
+    width: 53%;
+    height: 51rem;
+    border-radius: .6rem;
+    transition: all .7s ease;
+    box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+    padding: 5rem 0;
+    text-align: center;
+    color: $white;
+
+    &:hover {
+      -webkit-transform: translateY(-.4rem);
+      -moz-transform: translateY(-.4rem);
+      -ms-transform: translateY(-.4rem);
+      -o-transform: translateY(-.4rem);
+      transform: translateY(-.4rem);
+      @include HoverBoxShadowForm;
+    }
+
+    &--white {
+      height: 47rem;
+      background-image: linear-gradient( to right bottom,
+              rgba(#fff, .9),
+              rgba(#fff, .9));
+      width: 47%;
+      color: $black;
+    }
+  }
+
+  // FRONT SIDE STYLING
+  &__heading {
+    display: block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background-color: rgba(#fff, .2);
+    border-top: 1px solid #f2f4f4;
+    border-bottom: 1px solid #f2f4f4;
+    padding: 1.3rem 0;
+  }
+
+  &__half {
+    padding: 3rem 5rem;
+  }
+
+  &__details {
+    margin-bottom: 3rem;
+
+    ul {
+      text-align: left;
+      list-style: none;
+      width: 100%;
+      margin: 0 auto;
+
+      li {
+        font-size: 1.5rem;
+        padding: .6rem;
+      }
+    }
+  }
+
+  &__price-box {
+    text-align: center;
+    color: yellow;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: rgba(#676c75, .5);
+  font-size: 1.4rem;
+}
+
+::-moz-placeholder {
+  color: rgba(#676c75, .5);
+  font-size: 1.4rem;
+}
+
+:-moz-placeholder {
+  color: rgba(#676c75, .5);
+  font-size: 1.4rem;
+}
+
+:-ms-input-placeholder {
+  color: rgba(#676c75, .5);
+  font-size: 1.4rem;
+}

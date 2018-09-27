@@ -1,0 +1,102 @@
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  border-radius: 6px;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 1.4rem 1.5rem;
+  transition: transform .2s;
+  font-size: 1.7rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08);
+
+  @media screen and(max-width: 900px) {
+    font-size: 1.6rem;
+    padding: 1.2rem 1.3rem;
+  }
+
+  @media screen and(max-width: 768px) {
+    font-size: 1.4rem;
+    padding: 1.1rem 1.2rem;
+    margin-bottom: 5%;
+  }
+}
+
+
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 .5rem 1rem rgba(#000, 0.2);
+}
+
+.btn--orange {
+  color: $white;
+  background-image: linear-gradient(107deg, #ff8e64, #ffe641);
+  margin-right: 2rem;
+
+  &-wide {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.btn--green {
+  width: 100%;
+  color: $white;
+  background-image: linear-gradient(107deg, #03A3C4, #35E2B2);
+}
+
+
+.btn--buy {
+  @extend .btn--orange;
+  letter-spacing: .1rem;
+  text-transform: none;
+  width: 17rem;
+  text-align: center;
+
+  @media screen and(max-width: 1023px) {
+    margin-right: 0;
+    margin-bottom: 5%;
+  }
+}
+
+.btn--white {
+  background-color: #fff;
+  color: $hover-link-dark;
+  animation-name: moveUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  &-1 {
+    letter-spacing: .1rem;
+    width: 17rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+
+button.btn--blue {
+  background-image: linear-gradient(to right bottom, #7956ec, #2fb9f8);
+  color: rgba(#fff, .8);
+  cursor: pointer;
+  font-weight: 700;
+  width: 13rem;
+  height: 4rem;
+  outline: none;
+  font-size: 1.4rem;
+  padding: 1rem;
+  letter-spacing: 1px;
+
+  @media screen and(max-width: 767px) {
+    margin-top: 5%;
+  }
+
+}

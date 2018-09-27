@@ -1,0 +1,28 @@
+.section-download {
+  padding: 7.5rem 0;
+}
+
+.download {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  &__left, &__right {
+    float: left;
+    width: 50%;
+  }
+
+  &__right {
+    text-align: right;
+    height: 13em;
+  }
+
+  &__btn-box {
+    margin-top: 10%;
+  }
+
+}
+
+

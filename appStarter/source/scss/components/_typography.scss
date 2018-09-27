@@ -1,0 +1,107 @@
+/*------ Typography ------*/
+
+.heading-primary {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  color: $white;
+  margin-bottom: 3.7rem;
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--black {
+    color: #282B31;
+    margin-bottom: 1.7rem;
+    letter-spacing: normal;
+  }
+
+  @media screen and(max-width: 1023px) {
+    font-size: 2.6rem;
+    margin-bottom: 2.5rem;
+  }
+
+  @media screen and(max-width: 767px) {
+    font-size: 2.2rem;
+    margin-bottom: 1.8rem;
+  }
+
+}
+
+
+// ABOUT
+.heading-quaternary {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #282b31;
+
+  @media screen and(max-width: 767px) {
+    font-size: 1.4rem;
+  }
+
+  &--bold {
+    font-weight: 800;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: .8rem;
+  }
+}
+
+.about-ph {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.79;
+  color: #676c75;
+}
+
+.download-ph {
+  font-size: 1.6rem;
+  line-height: 1.88;
+  color: rgba(255, 255, 255, 0.8);
+
+  @media screen and(max-width: 1023px) {
+    font-size: 1.5rem;
+  }
+}
+
+.chess-ph {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  color: #676c75;
+
+  @media screen and(max-width: 1023px) {
+    font-size: 1.5rem;
+  }
+}
+
+.chess-ph--white {
+  color: #fff;
+  width: 100%;
+}
+
+.chess-ph--white span {
+  display: block;
+  font-weight: bold;
+}
+
+.video-ph {
+  @extend .chess-ph;
+  color: rgba($white, .6);
+}
+
+.card-ph {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.footer-ph {
+  margin-bottom: 1rem;
+}
