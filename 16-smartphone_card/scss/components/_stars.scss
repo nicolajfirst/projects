@@ -1,0 +1,68 @@
+
+.stars {
+
+  &__rating-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .6rem;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  &__list {
+    float: left;
+    width: 50%;
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 1.17rem;
+    height: 1.17rem;
+
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__digit {
+    padding-left: .5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: $grey-2;
+  }
+
+  &__reviews {
+    float: right;
+    width: 50%;
+    line-height: 1.5rem;
+    text-align: right;
+  }
+
+  &__cloud {
+    display: inline-block;
+    line-height: 100%;
+    vertical-align: middle;
+    height: 1.35rem;
+    width: 1.65rem;
+    margin-right: .5rem;
+  }
+
+  &__score {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 100%;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    color: $green;
+    border-bottom: 1px solid $green;
+  }
+}
+

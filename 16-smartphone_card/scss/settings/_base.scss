@@ -1,0 +1,37 @@
+/*-----BASE-----*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $bg-grey;
+}
+
+.container {
+  width: 48.1rem;
+  margin: 0 auto;
+  background-color: $bg-white;
+}
+
+.section-card {
+  width: 101.9rem;
+  margin: 0 auto;
+  background-color: orange;
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //-webkit-transform: translate(-50%, -50%);
+  //-moz-transform: translate(-50%, -50%);
+  //-ms-transform: translate(-50%, -50%);
+  //-o-transform: translate(-50%, -50%);
+  //transform: translate(-50%, -50%);
+}
