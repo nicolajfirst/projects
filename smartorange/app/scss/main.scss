@@ -1,0 +1,42 @@
+@import "settings/base";
+@import "settings/variable";
+@import "settings/mixin";
+@import "settings/animate";
+
+@import "components/typography";
+@import "components/header";
+@import "components/button";
+@import "components/team";
+@import "components/form";
+@import "components/popup";
+
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../fonts/BrandonGrotesque/BrandonGrotesque-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque Light";
+  src: url("../fonts/BrandonGrotesque/BrandonGrotesque-Light.ttf");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque Thin";
+  src: url("../fonts/BrandonGrotesque/BrandonGrotesque-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque Bold";
+  src: url("../fonts/BrandonGrotesque/BrandonGrotesque-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque Black";
+  src: url("../fonts/BrandonGrotesque/BrandonGrotesque-Black.ttf");
+}
+
+
+
+
+

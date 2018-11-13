@@ -1,0 +1,36 @@
+.btn,
+.btn:link,
+.btn:visited {
+  font-family: "Brandon Grotesque";
+  text-decoration: none;
+  font-size: 2.3rem;
+  color: $white;
+  text-transform: capitalize;
+  padding: 2rem 6.5rem;
+  border: 1px solid $white;
+  transition: transform .3s;
+
+  &:hover {
+    background-color: rgba(#000, .2);
+    transform: translateY(3px);
+    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    background-color: rgba(#000, .4);
+    box-shadow: 0 .5rem 1rem rgba(#000, 0.2);
+  }
+
+  @media screen and (max-width: 780px) {
+    font-size: 2rem;
+    padding: 1.5rem 4rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.8rem;
+    padding: .5rem 3rem;
+
+  }
+}
+

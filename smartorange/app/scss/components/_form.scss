@@ -1,0 +1,211 @@
+.section-form {
+  background-color: $blue;
+  padding-top: 10rem;
+
+  @media screen and (max-width: 480px) {
+    padding: 5rem .5rem 0 1rem;
+  }
+}
+
+.heading__box--blue {
+ text-align: left;
+}
+
+path {
+  transition: all .2s;
+}
+
+svg {
+  fill: $white;
+  transition: all .1s;
+
+  &:hover {
+    fill: #314671;
+  }
+
+  &:hover .svg-bg {
+    transform: scale(1.02);
+  }
+}
+
+.form {
+
+  &__box {
+    display: flex;
+    padding-bottom: 10rem;
+
+    @media screen and (max-width: 480px) {
+      display: block;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__left {
+    width: 46.55%;
+    margin-right: 6.9%;
+    text-align: left;
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      margin-right: 0;
+      text-align: center;
+    }
+  }
+
+  &__right {
+    width: 46.55%;
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    text-decoration: none;
+    font-family: "Brandon Grotesque";
+    font-size: 1.8rem;
+    color: $white;
+    padding-right: 8%;
+    transition: all .2s;
+
+    &:hover {
+      text-decoration: underline;
+      color: #314671;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.6rem;
+      justify-content: center;
+    }
+  }
+
+  &__link svg {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+
+.list__wrapper {
+  display: flex;
+}
+
+/*----------------------------*/
+/*------------FORM---------------*/
+/*---------------------------*/
+
+.contact-form {
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.span-1-of-2 {
+  width: 100%;
+  margin: 0;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 2rem;
+  border-radius: .3rem;
+  border: 1px solid transparent;
+  font-size: 1.6rem;
+  margin-bottom: 7%;
+  background-color: $white;
+  font-family: "Brandon Grotesque", sans-serif;
+  color: #909EAB;
+  position: relative;
+
+  @media screen and (max-width: 480px) {
+    padding: 1rem;
+  }
+}
+
+input[type=submit] {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  font-family: "Brandon Grotesque", sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  font-style: italic;
+}
+
+
+input[type=submit]:hover, .btn:hover {
+  box-shadow: 0 10px 30px rgba(255,255,255, .15);
+}
+
+input[type=submit]:active, .btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 10px 20px rgba(255,255,255, .3);
+}
+
+textarea {
+  height: 21.5rem;
+  outline: none;
+  -moz-appearance: none;
+  color: rgba($black, .8);
+
+  @media screen and (max-width: 480px) {
+    height: 14rem;
+  }
+}
+
+label {
+  line-height: 160%;
+  vertical-align: bottom;
+}
+
+*:focus {
+  outline:none;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba($black, .4);
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+}
+
+input:-moz-placeholder {
+  color: rgba($black, .4);
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+}
+
+textarea::-webkit-input-placeholder {
+  color: rgba($black, .4);
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+
+}
+
+textarea:-moz-placeholder {
+  color: rgba($black, .4);
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+}

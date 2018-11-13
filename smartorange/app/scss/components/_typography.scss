@@ -1,0 +1,121 @@
+.bold {
+  font-family: "Brandon Grotesque Bold";
+}
+
+.light {
+  font-family: "RoadRadio Light";
+}
+
+.heading-primary {
+  font-family: "Brandon Grotesque";
+  font-size: 6.6rem;
+  color: $white;
+  text-transform: uppercase;
+  margin-bottom: 8.5rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 5.6rem;
+    margin-bottom: 8rem;
+  }
+
+  @media screen and (max-width: 780px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 2.4rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.heading-secondary {
+  font-family: "Brandon Grotesque Light";
+  font-size: 6rem;
+  color: $white;
+  text-transform: capitalize;
+
+  @media screen and (max-width: 480px) {
+    font-size: 3.4rem;
+  }
+}
+
+.paragraph {
+  font-family: "Brandon Grotesque Light";
+  font-size: 3.2rem;
+  color: $white;
+  margin-bottom: 4.5rem;
+
+  @media screen and (max-width: 780px) {
+    font-size: 2.6rem;
+    margin-bottom: 3.5rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  &--copy {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.4rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.paragraph--small {
+  font-size: 2.2rem;
+  color: #767676;
+  margin-bottom: 0;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.8rem;
+  }
+
+  &--blue {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: $white;
+  }
+}
+
+.paragraph--team {
+  font-size: 2rem;
+  width: 66%;
+  margin: 0 auto;
+  text-align: center;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.8rem;
+    width: 80%;
+    text-align: justify;
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  color: #f2f2f2;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 1.6rem;
+  }
+
+  @media screen and (max-width: 780px) {
+    font-size: 1.3rem;
+  }
+}
+
+.heading-quaternary {
+  font-family: "Brandon Grotesque Bold";
+  font-size: 1.8rem;
+  color: $white;
+  margin-bottom: 1rem;
+}
+

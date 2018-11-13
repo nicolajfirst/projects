@@ -1,0 +1,149 @@
+.section-team {
+  padding: 10rem 0;
+  background-color: $black;
+}
+
+.heading__box {
+  text-align: center;
+  margin-bottom: 8rem;
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 4rem;
+  }
+}
+
+.team {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  margin-bottom: 5rem;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+    margin-bottom: 3rem;
+  }
+
+  &__card {
+    width: 33.33%;
+    text-align: center;
+    padding: 1rem 0;
+    transition: all .3s;
+
+    &:hover {
+      transform: translateY(-0.4rem);
+      background-color: rgba($black, .8);
+      box-shadow: 1px 2px 20px -2px rgba(255, 255, 255, 0.2);
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__face {
+    width: 24rem;
+    height: 24rem;
+    margin: 0 auto;
+    border: .8rem solid $white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 480px) {
+      width: 16rem;
+      height: 16rem;
+      border: .6rem solid $white;
+    }
+  }
+
+  &__position {
+    font-size: 1.6rem;
+    font-family: "Brandon Grotesque";
+    color: $white;
+    margin-bottom: 1rem;
+  }
+
+  &__socials {
+    width: 52%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 480px) {
+      width: 60%;
+    }
+  }
+
+  &__socials--last {
+    width: 32%;
+
+    @media screen and (max-width: 480px) {
+      width: 34%;
+    }
+  }
+
+  &__item {
+    display: block;
+    width: 4.2rem;
+    height: 4.2rem;
+    border: .3rem solid $white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: all .2s;
+
+    &:hover {
+      background-color: $grey;
+    }
+
+    &--tw:hover {
+      border: .3rem solid #00ACED;
+
+      & .fa-twitter {
+        color: #00ACED;
+      }
+    }
+
+    &--fb:hover {
+      border: .3rem solid #2C4281;
+
+      & .fa-facebook-f {
+        color: #2C4281;
+      }
+    }
+
+    &--pi:hover {
+      border: .3rem solid #BD1D2B;
+
+      & .fa-pinterest-p {
+        color: #BD1D2B;
+      }
+    }
+
+    &--gl:hover {
+      border: .3rem solid $grey;
+      background-image: linear-gradient( to bottom,
+              rgba(0,0,0, .3),
+              rgba(0,0,0, .3));
+    }
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    color: $white;
+    font-size: 1.8rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
