@@ -2,6 +2,10 @@
   background-color: $blue;
   padding-top: 10rem;
 
+  @media screen and (max-width: 780px) {
+    padding: 6rem .5rem 2rem .5rem;
+  }
+
   @media screen and (max-width: 480px) {
     padding: 5rem .5rem 0 1rem;
   }
@@ -9,6 +13,10 @@
 
 .heading__box--blue {
  text-align: left;
+
+  @media screen and (max-width: 780px) {
+    margin-bottom: 2rem;
+  }
 }
 
 path {
@@ -33,6 +41,10 @@ svg {
   &__box {
     display: flex;
     padding-bottom: 10rem;
+
+    @media screen and (max-width: 780px) {
+      padding-bottom: 5rem;
+    }
 
     @media screen and (max-width: 480px) {
       display: block;
@@ -72,6 +84,10 @@ svg {
       margin-bottom: 4rem;
     }
 
+    @media screen and (max-width: 780px) {
+      margin-bottom: 2rem;
+    }
+
     @media screen and (max-width: 480px) {
       display: block;
 
@@ -95,6 +111,11 @@ svg {
       color: #314671;
     }
 
+    @media screen and (max-width: 780px) {
+      font-size: 1.3rem;
+      padding-right: 2%;
+    }
+
     @media screen and (max-width: 480px) {
       font-size: 1.6rem;
       justify-content: center;
@@ -104,6 +125,16 @@ svg {
   &__link svg {
     width: 3.2rem;
     height: 3.2rem;
+
+    @media screen and (max-width: 780px) {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 3.4rem;
+      height: 3.4rem;
+    }
   }
 }
 
@@ -139,6 +170,14 @@ textarea {
   font-family: "Brandon Grotesque", sans-serif;
   color: #909EAB;
   position: relative;
+
+  @media screen and (max-width: 780px) {
+    width: 90%;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+  }
+
 
   @media screen and (max-width: 480px) {
     padding: 1rem;

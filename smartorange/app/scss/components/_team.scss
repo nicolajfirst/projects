@@ -1,11 +1,19 @@
 .section-team {
   padding: 10rem 0;
   background-color: $black;
+
+  @media screen and (max-width: 780px) {
+    padding: 6rem 0;
+  }
 }
 
 .heading__box {
   text-align: center;
   margin-bottom: 8rem;
+
+  @media screen and (max-width: 780px) {
+    margin-bottom: 2rem;
+  }
 
   @media screen and (max-width: 480px) {
     margin-bottom: 4rem;
@@ -18,6 +26,14 @@
   justify-content: space-between;
   padding: 0 4rem;
   margin-bottom: 5rem;
+
+  @media screen and (max-width: 780px) {
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (max-width: 640px) {
+    padding: 0 1rem;
+  }
 
   @media screen and (max-width: 480px) {
     display: block;
@@ -51,6 +67,18 @@
     box-sizing: border-box;
     margin-bottom: 2rem;
 
+    @media screen and (max-width: 780px) {
+      width: 18rem;
+      height: 18rem;
+      border: .7rem solid $white;
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 13rem;
+      height: 13rem;
+      border: .7rem solid $white;
+    }
+
     @media screen and (max-width: 480px) {
       width: 16rem;
       height: 16rem;
@@ -69,13 +97,29 @@
     width: 52%;
     margin: 0 auto;
 
+    @media screen and (max-width: 780px) {
+      width: 70%;
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 90%;
+    }
+
     @media screen and (max-width: 480px) {
-      width: 60%;
+      width: 50%;
     }
   }
 
   &__socials--last {
     width: 32%;
+
+    @media screen and (max-width: 780px) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 58%;
+    }
 
     @media screen and (max-width: 480px) {
       width: 34%;
@@ -90,6 +134,12 @@
     border-radius: 50%;
     box-sizing: border-box;
     transition: all .2s;
+
+    @media screen and (max-width: 640px) {
+      width: 3.8rem;
+      height: 3.8rem;
+      border: .2rem solid $white;
+    }
 
     &:hover {
       background-color: $grey;

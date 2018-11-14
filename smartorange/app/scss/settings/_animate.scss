@@ -198,6 +198,10 @@
 .js--wp-3 {
   opacity: 0;
   animation-duration: 1s;
+
+  @media screen and (max-width: 780px) {
+    opacity: .9;
+  }
 }
 
 .js--wp-3.animated {
@@ -207,6 +211,10 @@
 .js--wp-4 {
   opacity: 0;
   animation-duration: 1s;
+
+  @media screen and (max-width: 780px) {
+    opacity: .9;
+  }
 }
 
 .js--wp-4.animated {

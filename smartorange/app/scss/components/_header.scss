@@ -17,7 +17,7 @@
     }
 
     @media screen and (max-width: 480px) {
-      top: 30%;
+      top: 6%;
     }
   }
 
@@ -38,12 +38,11 @@
     @include abcCenter;
 
     @media screen and (max-width: 780px) {
-      top: 55%;
+      top: 16%;
     }
 
     @media screen and (max-width: 480px) {
-      top: 35%;
-
+      top: 8%;
     }
   }
 
@@ -99,8 +98,8 @@
     height: 100%;
 
     @media screen and (max-width: 480px) {
-      height: 70vh;
-      width: auto;
+
+
     }
   }
 }
